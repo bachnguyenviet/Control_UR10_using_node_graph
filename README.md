@@ -12,11 +12,11 @@ The contributors to this project are:
  Specificially, each link of the UR5 can only move with a certain resolution creating nodes each describing a distinct pose of the end effector; The nodes graph sructure also allows us to avoid obstacles by simply disabling the connecctions to nodes in which the UR10 collide with obstacles.
 
  The UR10 has 6 moveable joint; we only use 5 of them since the last joint is only for rotating the gripper. The resolutions fand operating range for 5 of the links are:
- 1. First linkk : range 0 - 180 degree, resolution : 30 degree
- 2. Seccond linkk : range 0 - 180 degree, resolution : 15 degree
- 3. Third linkk : range 0 - 180 degree, resolution : 15 degree
- 4. Forth linkk : range 0 - 90 degree, resolution : 30 degree
- 5. Fifth linkk : range 0 - 90 degree, resolution : 30 degree
+ 1. First link : range 0 - 180 degree, resolution : 30 degree
+ 2. Seccond link : range 0 - 180 degree, resolution : 15 degree
+ 3. Third link : range 0 - 180 degree, resolution : 15 degree
+ 4. Forth link : range 0 - 90 degree, resolution : 30 degree
+ 5. Fifth link : range 0 - 90 degree, resolution : 30 degree
 
  ###
 
