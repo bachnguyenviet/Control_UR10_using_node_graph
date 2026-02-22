@@ -63,7 +63,7 @@ The contributors to this project are:
 
 This project require CoppeliaSim and ROS2 interface to work so follow the instruction on this page for setting up: https://uark-meeg-intro-robo.readthedocs.io/en/latest/coppelia.html
 
-Here is the instruction how to create all the neccessary file since github dont allow uploading file too large : 
+Here is the instruction how to create all the neccessary file and run from scratch:
 
 
 1. Open and run the Coppelia scene : ./CoppeliaScenes/test_link_displacement_avoid_obstacles_simulate_result.ttt in order to obtain the node list with the exclusion of node colliding with obstacles (change the directories in the script to where you want the files to be saved)
@@ -73,7 +73,9 @@ Here is the instruction how to create all the neccessary file since github dont 
 
 3. Run the python file test_avoid_obstacles.py
 
-4. Run the Coppelia scene ./CoppeliaScenes/test_link_displacement_avoid_obstacles_.ttt
+4. Run the Coppelia scene ./CoppeliaScenes/test_link_displacement_avoid_obstacles_.ttt.
+
+In the folder 30_15_15_30_30, most ofthe necessary files have been included, you just need to run the test_avoid_obstacles.py and the Coppelia scene /CoppeliaScenes/test_link_displacement_avoid_obstacles_.ttt. However, if you want to run the file djikstra_refine_not_count_collided.py, you have to run everything over again since one of the required files can not be uploaded due to its size ( ~ 1.1 GB ) 
 
 Once everything is setup, you can just run the Coppelia scene /CoppeliaScenes/test_link_displacement_avoid_obstacles_.ttt and the python file test_avoid_obstacles.py following the order in the instruction. Note that if you change the location of the obstacles than you must run everything over again. And it is also important to note that since the UR10 does not look like a conventional Robotic arm that people are used to, it is recommended to use the function calculate_end_effector() for testing and not just make up a random point 
 
