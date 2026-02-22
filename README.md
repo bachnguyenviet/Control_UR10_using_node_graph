@@ -9,9 +9,9 @@ The contributors to this project are:
 
  In this project, We will try to explore the capability to control a robotic arm to avoid obstacles using nodes graph; our goal is to control the robotic arm UR5 by diving the operational space into a node graphs with which we are able to use algorithm such as D* or A* to find the shortest path to a certain point. 
 
- Specificially, each link of the UR5 can only move with a certain resolution creating nodes each describing a distinct pose of the end effector; The nodes graph sructure also allows us to avoid obstacles by simply disabling the connecctions to nodes in which the UR5 collide with obstacles.
+ Specificially, each link of the UR5 can only move with a certain resolution creating nodes each describing a distinct pose of the end effector; The nodes graph sructure also allows us to avoid obstacles by simply disabling the connecctions to nodes in which the UR10 collide with obstacles.
 
- The UR5 has 6 moveable joint; we only use 5 of them since the last joint is only for rotating the gripper. The resolutions fand operating range for 5 of the links are:
+ The UR10 has 6 moveable joint; we only use 5 of them since the last joint is only for rotating the gripper. The resolutions fand operating range for 5 of the links are:
  1. First linkk : range 0 - 180 degree, resolution : 30 degree
  2. Seccond linkk : range 0 - 180 degree, resolution : 15 degree
  3. Third linkk : range 0 - 180 degree, resolution : 15 degree
@@ -69,11 +69,13 @@ Here is the instruction how to create all the neccessary file since github dont 
 1. Open and run the Coppelia scene : ./CoppeliaScenes/test_link_displacement_avoid_obstacles_simulate_result.ttt in order to obtain the node list with the exclusion of node colliding with obstacles (change the directories in the script to where you want the files to be saved)
 
 2. Run the python file djikstra_refine_not_count_collided.py
-( this may take very long and change the path to match first step )
+( this may take very long depending on the number of anchors and  also change the path to match first step )
 
 3. Run the python file test_avoid_obstacles.py
 
 4. Run the Coppelia scene ./CoppeliaScenes/test_link_displacement_avoid_obstacles_.ttt
+
+Once everything is setup, you can just run the Coppelia scene /CoppeliaScenes/test_link_displacement_avoid_obstacles_.ttt and the python file test_avoid_obstacles.py following the order in the instruction. Note that if you change the location of the obstacles than you must run everything over again. And it is also important to note that since the UR10 does not look like a conventional Robotic arm that people are used to, it is recommended to use the function calculate_end_effector() for testing and not just make up a random point 
 
 # Conclusion
 
