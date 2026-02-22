@@ -63,7 +63,7 @@ The contributors to this project are:
 
 This project require CoppeliaSim and ROS2 interface to work so follow the instruction on this page for setting up: https://uark-meeg-intro-robo.readthedocs.io/en/latest/coppelia.html
 
-All the file needed for the operation of this project has been included but if you want to modify anything or build thing up from the scratch, here is the instruction how to : 
+Here is the instruction how to create all the neccessary file since github dont allow uploading file too large : 
 
 
 1. Open and run the Coppelia scene : ./CoppeliaScenes/test_link_displacement_avoid_obstacles_simulate_result.ttt in order to obtain the node list with the exclusion of node colliding with obstacles (change the directories in the script to where you want the files to be saved)
